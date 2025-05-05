@@ -130,7 +130,6 @@ a:hover, button:hover {
 }
 
 
-
 /*---------HEADER--------*/
 
 
@@ -256,6 +255,16 @@ a:hover, button:hover {
 
 .welcome__img {
     width: 470px;
+    animation: moveCup 1.5s infinite alternate;
+}
+
+@keyframes moveCup {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translateY(-40px);
+    }
 }
 
 .benefits {
@@ -488,7 +497,7 @@ a:hover, button:hover {
 }
 
 .card:hover::before {
-    background: linear-gradient(260deg, rgba(35,114,73,1) 0%, rgba(53,198,107,1) 100%);
+    background: linear-gradient(260deg, rgba(35, 114, 73, 1) 0%, rgba(53, 198, 107, 1) 100%);
 }
 
 .card:hover .card__img {
@@ -644,4 +653,211 @@ a:hover, button:hover {
     background-image: url("/images/events/5.png");
     grid-area: choose;
 }
+
+.contacts {
+    margin-top: 130px;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.contacts .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contacts__text {
+    width: 390px;
+}
+
+.contacts__title {
+    margin-bottom: 50px;
+}
+
+.contacts__desc {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.contacts__desc::before {
+    content: "";
+    position: absolute;
+    left: 80px;
+    top: 20px;
+    z-index: -5;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+    filter: blur(90px);
+}
+
+.contacts__phone {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.contacts__phone::before {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-image: url("/images/icons/phone.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.contacts__img-wrapper {
+    position: relative;
+}
+
+.contacts__img-wrapper::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 30px;
+    z-index: -5;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+    filter: blur(90px);
+}
+
+.contacts__img-wrapper::after {
+    content: "";
+    width: 920px;
+    height: 670px;
+    position: absolute;
+    right: -245px;
+    bottom: -360px;
+    z-index: -15;
+    background-image: url("./images/icons/lines.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(20deg);
+}
+
+.contacts__img-inner-wrapper {
+    position: relative;
+}
+
+.contacts__img-inner-wrapper::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #237249;
+    position: absolute;
+    bottom: -25px;
+    right: -35px;
+    z-index: -10;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
+}
+
+.contacts__img-inner-wrapper::after {
+    content: "we\Ahave";
+    white-space: pre-wrap;
+
+    position: absolute;
+    top: 55px;
+    left: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 250px;
+    height: 250px;
+    z-index: 20;
+
+    font-weight: 500;
+    font-size: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    transform: translate(-50%, -50%);
+
+    background-image: url("/images/icons/star2.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.contacts__img {
+    width: 350px;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: #0b0c0d;
+}
+
+.footer .container {
+
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__logo {
+}
+
+.footer__nav {
+    display: flex;
+    gap: 80px;
+}
+
+.footer__nav-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__nav-link {
+    letter-spacing: -0.01em;
+    color: rgba(187, 179, 179, 0.43);
+}
+
+.footer__nav-link:first-child {
+    color: #bbb3b3;
+}
+
+.footer__up-link {
+    width: 85px;
+    height: 85px;
+    padding: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #35C66B;
+    border-bottom: 1px solid #237249;
+    border-radius: 30px;
+}
+
+.footer__up-link::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: rgba(218, 218, 218);
+    background: linear-gradient(110deg, rgba(218, 218, 218, 0.8) 0%, rgba(218, 218, 218, 0.07) 42%, rgba(218, 218, 218, 0.7) 100%);
+    z-index: -5;
+    border-radius: 30px;
+}
+
+.footer__arrow {
+    height: 35px;
+}
+
+.footer__phone {
+}
+
+
 
