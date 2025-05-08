@@ -13,9 +13,11 @@ ExtraBold 800
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     color: #D9D9D9;
@@ -269,6 +271,8 @@ a:hover, button:hover {
 
 .benefits {
     margin-top: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .benefits__container {
@@ -473,8 +477,9 @@ a:hover, button:hover {
 
 .products__cards {
     display: flex;
-    gap: 30px;
-    justify-content: space-between;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -616,7 +621,7 @@ a:hover, button:hover {
 
 .event__title {
     margin-bottom: 50px;
-    width: 294px;
+    max-width: 294px;
     font-weight: 500;
     font-size: 32px;
     line-height: 109%;
@@ -655,7 +660,7 @@ a:hover, button:hover {
 }
 
 .contacts {
-    margin-top: 130px;
+    padding-top: 130px;
     overflow: hidden;
     padding-bottom: 100px;
 }
@@ -806,6 +811,7 @@ a:hover, button:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 85px;
 }
 
 .footer__logo {
@@ -837,9 +843,13 @@ a:hover, button:hover {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #35C66B;
-    border-bottom: 1px solid #237249;
     border-radius: 30px;
+    border: 1.5px solid transparent;
+    background: linear-gradient(#0b0c0d, #0b0c0d) padding-box,
+    linear-gradient(-30deg, #237249, #35C66B) border-box;
+    /*border: 1px solid #35C66B;*/
+    /*border-bottom: 1px solid #237249;*/
+    /*border-radius: 30px;*/
 }
 
 .footer__up-link::before {
@@ -847,7 +857,7 @@ a:hover, button:hover {
     position: absolute;
     inset: -2px;
     background: rgba(218, 218, 218);
-    background: linear-gradient(110deg, rgba(218, 218, 218, 0.8) 0%, rgba(218, 218, 218, 0.07) 42%, rgba(218, 218, 218, 0.7) 100%);
+    background: linear-gradient(110deg, #237249 0%, #237249 42%, #237249 100%);
     z-index: -5;
     border-radius: 30px;
 }
@@ -857,6 +867,35 @@ a:hover, button:hover {
 }
 
 .footer__phone {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+@media (max-width: 1140px) {
+    .benefits__container::after {
+        left: 50px;
+    }
+
+    .welcome__img-wrapper {
+        padding-right: 0;
+    }
+
+    .event--choose {
+        display: none;
+    }
+
+    .events__inner-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "price price"
+                             "free social"
+                             "kitchen choose";
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer__nav {
+        gap: 40px;
+    }
 }
 
 
