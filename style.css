@@ -1143,6 +1143,11 @@ a:hover, button:hover {
         filter: blur(40px);
     }
 
+    .benefits__badge {
+        width: 180px;
+        height: 180px;
+    }
+
     .history {
         margin-top: 60px;
         padding-bottom: 0;
@@ -1280,10 +1285,10 @@ a:hover, button:hover {
     }
 
     .contacts__img-inner-wrapper::after {
-        width: 200px;
-        height: 200px;
+        width: 190px;
+        height: 190px;
         font-size: 28px;
-        right: -140px;
+        right: -200px;
     }
 
     .contacts__title {
@@ -1360,5 +1365,33 @@ a:hover, button:hover {
     .btn {
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .contacts__img-inner-wrapper::before {
+        right: -30px;
+    }
+
+    .contacts__img-inner-wrapper::after {
+        width: 225px;
+        height: 150px;
+        font-size: 24px;
+    }
+
+    .benefits__badge {
+        font-size: 26px;
+    }
+
+    .welcome__img-wrapper::before {
+        width: 420px;
+        height: 370px;
+        right: -33px;
+        bottom: 230px;
+    }
+
+    .welcome__img-wrapper::after {
+        right: 190px;
+        bottom: 440px;
+        width: 140px;
+        height: 140px;
     }
 }
