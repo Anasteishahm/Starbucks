@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
-/*
-Regular 400
-Medium 500
-SemiBold 600
-ExtraBold 800
-*/
-
 * {
     box-sizing: border-box;
 }
@@ -322,7 +315,7 @@ a:hover, button:hover {
     color: #ffffff;
     transform: translate(-50%, -50%);
 
-    background-image: url("/images/icons/star2.svg");
+    background-image: url("./images/icons/star2.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -587,7 +580,7 @@ a:hover, button:hover {
     top: -350px;
     left: -400px;
     z-index: -10;
-    background-image: url("/images/icons/lines.svg");
+    background-image: url("./images/icons/lines.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -631,27 +624,27 @@ a:hover, button:hover {
 }
 
 .event--price {
-    background-image: url("/images/events/1.png");
+    background-image: url("./images/events/1.png");
     grid-area: price;
 }
 
 .event--kitchen {
-    background-image: url("/images/events/2.png");
+    background-image: url("./images/events/2.png");
     grid-area: kitchen;
 }
 
 .event--free {
-    background-image: url("/images/events/3.png");
+    background-image: url("./images/events/3.png");
     grid-area: free;
 }
 
 .event--social {
-    background-image: url("/images/events/4.png");
+    background-image: url("./images/events/4.png");
     grid-area: social;
 }
 
 .event--choose {
-    background-image: url("/images/events/5.png");
+    background-image: url("./images/events/5.png");
     grid-area: choose;
 }
 
@@ -705,7 +698,7 @@ a:hover, button:hover {
     content: "";
     width: 45px;
     height: 45px;
-    background-image: url("/images/icons/phone.png");
+    background-image: url("./images/icons/phone.png");
     background-size: contain;
     background-position: center;
 }
@@ -781,7 +774,7 @@ a:hover, button:hover {
     color: #ffffff;
     transform: translate(-50%, -50%);
 
-    background-image: url("/images/icons/star2.svg");
+    background-image: url("./images/icons/star2.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
